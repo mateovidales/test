@@ -6,6 +6,10 @@ import io.cucumber.java.en.When;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import static com.tdea.parcial.Utils.getTimeOfDay;
+import static com.tdea.parcial.Utils.isValidHour;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 public class Test {
 
     private WebDriver driver;
@@ -19,20 +23,36 @@ public class Test {
 
     }
 
-    @Given("testGiven")
-    public void test_given() {
-        setUp();
+    //    Given si la hora es 3
+//    When verificar si es 'nigth'
+//    Then obtenemos "nigth"
+
+    int hora;
+    String hora2;
+    boolean validar;
+
+
+
+    @Given("si la hora es {int}")
+    public void si_la_hora_es(Integer int1) {
+        int hora = int1;
+        hora2 = getTimeOfDay(int1);
+
+    }
+    @When("verificar si es valida")
+    public void verificar_si_es() {
+        validar = isValidHour(hora);
+        if (hora > )
     }
 
-    @When("testWhen")
-    public void test_when() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
-    }
 
-    @Then("testThen")
-    public void test_then() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+
+
+
+    }
+    @Then("obtenemos {string}")
+    public void obtenemos(String string) {
+    assertEquals(String, hora2);
+    }
     }
 }
