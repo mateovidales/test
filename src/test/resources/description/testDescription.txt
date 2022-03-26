@@ -1,0 +1,5 @@
+Ingresamos un numero entre las 0 y las 6 si la hora es valida el sistema nos mostrara el resultado 'night'
+Ingresamos un numero entre las 6 y las 12 si la hora es valida el sistema nos mostrara el resultado 'Morning'
+Ingresamos un numero entre las 12 y las 18 si la hora es valida el sistema nos mostrara el resultado 'Afternoon'
+Ingresamos un numero entre las 18 y las 24 si la hora es valida el sistema nos mostrara el resultado 'Evening'
+Ingresamos un numero si es despues de las 24 la hora es invalida y el sistema nos mostrara el resultado 'Invalid Hour'
