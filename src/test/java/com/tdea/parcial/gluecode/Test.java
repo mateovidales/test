@@ -1,5 +1,6 @@
 package com.tdea.parcial.gluecode;
 
+import com.tdea.parcial.Utils;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -8,7 +9,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import static com.tdea.parcial.Utils.getTimeOfDay;
 import static com.tdea.parcial.Utils.isValidHour;
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class Test {
 
@@ -23,36 +24,33 @@ public class Test {
 
     }
 
-    //    Given si la hora es 3
-//    When verificar si es 'nigth'
-//    Then obtenemos "nigth"
 
     int hora;
-    String hora2;
-    boolean validar;
-
+    String tiempo;
+    Boolean validar;
 
 
     @Given("si la hora es {int}")
     public void si_la_hora_es(Integer int1) {
-        int hora = int1;
-        hora2 = getTimeOfDay(int1);
+        hora=int1;
+        tiempo= Utils.getTimeOfDay(int1);
 
     }
     @When("verificar si es valida")
-    public void verificar_si_es() {
-        validar = isValidHour(hora);
-        if (hora > )
+    public void verificar_si_es_valida() {
+        validar=Utils.isValidHour(hora);
+        if(hora>24){
+            assertFalse(validar);
+        }else{
+            assertTrue(validar);
+        }
+
     }
+    @Then("obtenemos Nigth")
+    public void obtenemos_nigth() {
+        assertEquals("Nigth",tiempo);
 
-
-
-
-
-    }
-    @Then("obtenemos {string}")
-    public void obtenemos(String string) {
-    assertEquals(String, hora2);
-    }
     }
 }
+
+
