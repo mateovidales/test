@@ -1,0 +1,11 @@
+En el video PrimeraParteParcial2 podemos ver como hacemos las pruebas automaticas,
+donde se puede observar como en el primer test se agrega la letra "C" y este arroja la letra ingresada
+en un texto en  la parte de abajo, en el segundo test observamos como se clickea el enlace "click here"
+este nos arroja una notificacion que dice "Action succefull", se le da en la x de la notificacion y podemos
+ver como se vuelve a clickear en "click here" para que nos aparezca nuevamente el mensaje.
+
+En el video SegundaParteParcial2 podemos ver las pruebas manuales, donde podemos observar lo descrito anteriormente
+en el primer test, agregamos manualmente la letra "C" y este nos arroja la letra agregada en un texto abajo indicandonos
+la letra que se le ingreso, en el segundo test le damos a el enlace "Click here" este nos muestra la notificacion
+con el mensaje "action succefull", le damos en la x y nuevamente en el enlace "Click here" para que nos aparezca
+nuevamente el mensaje "action succefull"
